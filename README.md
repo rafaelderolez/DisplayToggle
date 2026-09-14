@@ -20,7 +20,28 @@ DisplayToggle uses the private `CGSConfigureDisplayEnabled` API in Apple's SkyLi
 
 **Keep another display available when turning one off.** The app leaves built-in displays alone, but does not currently prevent turning off your last active external display. On a desktop Mac or a MacBook with the lid closed, that can leave you without a visible screen. Open the laptop lid or reconnect the monitor cable if needed.
 
-## Install from source
+## Install
+
+### Homebrew
+
+```sh
+brew install --cask rafaelderolez/tap/displaytoggle
+```
+
+This installs the signed, notarized app from the [personal tap](https://github.com/rafaelderolez/homebrew-tap). No Xcode or Command Line Tools are needed. Open DisplayToggle from Applications and look for the display icon in the menu bar.
+
+To update later:
+
+```sh
+brew update
+brew upgrade --cask rafaelderolez/tap/displaytoggle
+```
+
+### Direct download
+
+Download `DisplayToggle-<version>.zip` from [GitHub Releases](https://github.com/rafaelderolez/DisplayToggle/releases/latest), unzip it, and drag `DisplayToggle.app` into Applications. The signed, notarized app supports both Apple Silicon and Intel.
+
+### Build from source
 
 No Homebrew or full Xcode project is needed. Install Apple's Command Line Tools once:
 
@@ -46,7 +67,7 @@ If `/Applications` is not writable, install for your user:
 DEST="$HOME/Applications" ./build.sh
 ```
 
-### Other build options
+#### Other build options
 
 ```sh
 ./build.sh --build-only                # Build into build/; no install or launch
@@ -57,12 +78,6 @@ DEST="$HOME/Applications" ./build.sh
 ```
 
 Builds explicitly target macOS 13. A recent Command Line Tools installation with a macOS 14.4+ SDK is required to compile the newer menu APIs. The version comes from [`VERSION`](VERSION).
-
-### Downloads and Homebrew
-
-Source installation is the available path until the first binary release is published. Once available, signed and notarized downloads will be listed under [GitHub Releases](https://github.com/rafaelderolez/DisplayToggle/releases). Unzip `DisplayToggle-<version>.zip`, drag `DisplayToggle.app` into Applications, and open it. Release ZIPs contain both Apple Silicon and Intel executables.
-
-The [personal Homebrew tap](https://github.com/rafaelderolez/homebrew-tap) is being prepared. Its DisplayToggle cask will be enabled after the first signed release; see the [release guide](docs/RELEASING.md#homebrew). Building from source will remain supported.
 
 ## Use
 

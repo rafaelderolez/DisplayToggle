@@ -1,6 +1,6 @@
 # Changelog
 
-## Unreleased
+## 1.0.0 — 2026-09-14
 
 - Initial DisplayToggle app: individual and group external display toggles, global shortcut, remembered displays, and launch at login.
 - Source builds for macOS 13+, with optional universal Apple Silicon and Intel output.
