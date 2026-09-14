@@ -32,4 +32,4 @@ This builds, installs, and opens the app. Use `./build.sh --build-only` to compi
 
 DisplayToggle uses a private macOS API, so OS updates may break it. Keep another screen visible: the app can turn off your last active external display. If a monitor won't come back, reconnect its cable or open your laptop lid.
 
-[Contributing](CONTRIBUTING.md) · [Releasing](docs/RELEASING.md) · [MIT license](LICENSE)
+[Contributing](CONTRIBUTING.md) · [MIT license](LICENSE)
