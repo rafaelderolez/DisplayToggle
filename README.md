@@ -8,6 +8,12 @@ Click a monitor in the menu to toggle it, or press **⌃⌥⌘D** (Control–Opt
 
 Requires macOS 13 or later. Supports Apple Silicon and Intel.
 
+## Why I built this
+
+I share a monitor between my MacBook and Windows PC. Sometimes I'm using the PC and open the laptop next to it. Even though the monitor is showing the Windows input, macOS still sees it as connected and puts windows on a screen I can't see.
+
+DisplayToggle lets me disconnect the monitor from macOS and use just the laptop screen, then turn it back on when I switch the monitor to the Mac.
+
 ## Install
 
 ```sh
