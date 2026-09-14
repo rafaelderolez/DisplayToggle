@@ -210,9 +210,9 @@ private extension NSMenu {
 }
 
 private extension NSMenuItem {
-    /// Grey second line under the title. Silently skipped before macOS 14.
+    /// Grey second line under the title. Silently skipped before macOS 14.4.
     func setSubtitle(_ text: String) {
-        if #available(macOS 14, *) { subtitle = text }
+        if #available(macOS 14.4, *) { subtitle = text }
     }
 }
 

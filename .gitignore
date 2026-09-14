@@ -1,2 +1,6 @@
 *.app/
 .DS_Store
+/build/
+/dist/
+*.p12
+*.p8

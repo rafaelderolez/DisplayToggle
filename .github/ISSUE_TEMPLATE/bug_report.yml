@@ -1,0 +1,22 @@
+name: Bug report
+description: Report a display, shortcut, startup, or build problem.
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: What happened?
+      description: Include steps to reproduce, expected behavior, and actual behavior.
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: Setup
+      description: App version or commit, macOS version, Mac model/chip, monitor, and cable or dock. Do not include serial numbers.
+    validations:
+      required: true
+  - type: textarea
+    id: diagnostics
+    attributes:
+      label: Additional details
+      description: Build output, error messages, or screenshots with personal information removed.
